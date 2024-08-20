@@ -25,7 +25,7 @@ const addProduct = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
-}
+};
 
 const updateProduct = async (req, res) => {
   try {
@@ -41,7 +41,7 @@ const updateProduct = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
-}
+};
 
 const deleteProduct = async (req, res) => {
   try {
@@ -56,7 +56,7 @@ const deleteProduct = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
-}
+};
 
 export {
   getAllProducts,

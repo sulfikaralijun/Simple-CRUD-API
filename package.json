@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch ./src/index.mjs"
+    "dev": "node --watch --env-file=.env ./src/index.mjs",
+    "start": "node --env-file=.env ./src/index.mjs"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "Simple CRUD app",
   "dependencies": {
     "express": "^4.19.2",
     "mongodb": "^6.8.0",
